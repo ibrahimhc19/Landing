@@ -1,8 +1,6 @@
-import './Main.css'
+import "./Main.css";
 const Caracteristicas = () => {
-  return (
-    <div>Caracteristicas</div>
-  )
-}
+  return <div>Caracteristicas</div>;
+};
 
-export default Caracteristicas
+export default Caracteristicas;

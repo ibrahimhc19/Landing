@@ -1,8 +1,6 @@
-import './Action.css'
+import "./Action.css";
 const Accion = () => {
-  return (
-    <div>Accion</div>
-  )
-}
+  return <div>Accion</div>;
+};
 
-export default Accion
+export default Accion;
