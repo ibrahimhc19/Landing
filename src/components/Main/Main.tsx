@@ -1,4 +1,4 @@
-
+import './Main.css'
 const Caracteristicas = () => {
   return (
     <div>Caracteristicas</div>
