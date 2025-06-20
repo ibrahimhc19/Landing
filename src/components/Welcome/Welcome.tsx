@@ -1,8 +1,6 @@
-import './Welcome.css'
+import "./Welcome.css";
 const Presentacion = () => {
-  return (
-    <div>Presentacion</div>
-  )
-}
+  return <div>Presentacion</div>;
+};
 
-export default Presentacion
+export default Presentacion;
