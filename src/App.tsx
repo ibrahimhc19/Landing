@@ -1,21 +1,21 @@
-import Accion from "./components/Accion/Accion"
-import Caracteristicas from "./components/Caracterisiticas/Caracteristicas"
+import Action from "./components/Action/Action"
+import Main from "./components/Main/Main"
 import Footer from "./components/Footer/Footer"
 import Hero from "./components/Hero/Hero"
-import NavBar from "./components/NavBar/NavBar"
-import Presentacion from "./components/Presentacion/Presentacion"
+import Header from "./components/Header/Header"
+import Welcome from "./components/Welcome/Welcome"
 
 
 function App() {
 
   return (
     <>
-      <NavBar/>
+      <Header/>
       <Hero/>
-      <Accion/>
-      <Presentacion/>
-      <Caracteristicas/>
-      <Accion/>
+      <Action/>
+      <Welcome/>
+      <Main/>
+      <Action/>
       <Footer/>
     </>
   )
