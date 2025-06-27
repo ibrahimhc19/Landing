@@ -1,14 +1,19 @@
+import type { IHeaderProps } from "../../types/types";
 import "./Header.css";
-const NavBar = () => {
+import Spinner from "@/assets/Media/spinner.svg";
+
+
+const NavBar = ({...enlaces}:IHeaderProps) => {
   return (
     <header>
       <div className="container">
-        <p className="logo">ProgramaYa!</p>
+        <p className="logo">{enlaces.title}</p>
         <nav>
-          <a href="#somos-proya">Quienes Somos</a>
-          <a href="#nuestros-programas">Nuestros Programas</a>
-          <a href="#caracteristicas">Características</a>
+          {enlaces.links.map((link)=> (
+            <a href={link.linkRef}>{link.linkTitle}</a>
+          ))}
         </nav>
+        <img src={Spinner} style={{height: "30px"}} alt="loader" />
       </div>
     </header>
   );
