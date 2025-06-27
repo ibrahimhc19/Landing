@@ -4,6 +4,21 @@ import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Header from "./components/Header/Header";
 import Welcome from "./components/Welcome/Welcome";
+import type { IHeaderProps } from "./types/types";
+
+{/* <a href="#somos-proya">Quienes Somos</a>
+          <a href="#nuestros-programas">Nuestros Programas</a>
+          <a href="#caracteristicas">Características</a> */}
+
+const enlaces:IHeaderProps = {
+  title: "ProgramaYa!",
+  links: [
+    { linkTitle: 'Inicio', linkRef: '/' },
+    { linkTitle: 'Acerca de', linkRef: '/about' },
+    { linkTitle: 'Contacto', linkRef: '/contact' }
+  ]
+}
+
 
 function App() {
   return (
@@ -14,7 +29,7 @@ function App() {
           <Route path="/pagina" element={<Pagina />} />
         </Routes>
       </BrowserRouter> */}
-      <Header />
+      <Header {...enlaces}/>
       <Hero />
       <Action />
       <Welcome />
