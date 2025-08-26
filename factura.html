@@ -1,0 +1,74 @@
+<div id="invoice" style="max-width: 700px; margin: 0 auto; padding: 24px; font-family: Arial, sans-serif; font-size: 14px; color: #333; border: 1px solid #ccc;">
+  <!-- Encabezado -->
+  <div style="display: flex; justify-content: space-between; margin-bottom: 24px;">
+    <div>
+      <h2 style="margin: 0 0 4px; font-size: 24px;">Factura</h2>
+      <p style="margin: 2px 0;">N.º: 000123</p>
+      <p style="margin: 2px 0;">Fecha: 2025-06-27</p>
+    </div>
+    <div style="text-align: right;">
+      <p style="margin: 2px 0; font-weight: bold;">Empresa XYZ S.A.S</p>
+      <p style="margin: 2px 0;">NIT 123456789-0</p>
+      <p style="margin: 2px 0;">Cra 123 #45-67</p>
+      <p style="margin: 2px 0;">Bogotá, Colombia</p>
+    </div>
+  </div>
+
+  <!-- Cliente -->
+  <div style="margin-bottom: 16px;">
+    <h3 style="margin-bottom: 4px; font-weight: bold;">Cliente:</h3>
+    <p style="margin: 2px 0;">Juan Pérez</p>
+    <p style="margin: 2px 0;">CC 987654321</p>
+    <p style="margin: 2px 0;">juan.perez@email.com</p>
+    <p style="margin: 2px 0;">Medellín, Colombia</p>
+  </div>
+
+  <!-- Tabla productos -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+    <thead>
+      <tr style="background-color: #f2f2f2;">
+        <th style="border: 1px solid #ccc; padding: 8px;">Cantidad</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Descripción</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Precio Unitario</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">2</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Cambio de aceite</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">$50.000</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">$100.000</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ccc; padding: 8px;">1</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">Revisión general</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">$80.000</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">$80.000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Totales -->
+  <div style="display: flex; justify-content: flex-end;">
+    <div style="width: 50%;">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+        <span>Subtotal:</span>
+        <span>$180.000</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+        <span>IVA (19%):</span>
+        <span>$34.200</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-weight: bold; border-top: 1px solid #ccc; padding-top: 8px;">
+        <span>Total a pagar:</span>
+        <span>$214.200</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Observaciones -->
+  <div style="margin-top: 24px; font-size: 12px; color: #666;">
+    <p><strong>Observaciones:</strong> Esta factura debe ser cancelada en un plazo máximo de 8 días. Gracias por su preferencia.</p>
+  </div>
+</div>
